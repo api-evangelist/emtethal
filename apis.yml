@@ -1,7 +1,29 @@
 aid: emtethal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/emtethal.png
 name: Emtethal
-description: Emtethal is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Emtethal is a Riyadh, Saudi Arabia based smart compliance and inspection management
+  platform for the food service and hospitality sectors, backed by 500 Global. The
+  platform automates inspection scheduling and distribution, provides custom checklists
+  per facility type, captures photo documentation with automatic timestamps and GPS
+  location, detects and categorizes violations automatically, and pushes real-time
+  alerts for critical issues. It layers analytics and compliance reporting on top of
+  an offline-capable mobile field-inspection app (iOS and Android) and AI-powered camera
+  and sensor monitoring. Emtethal serves both individual food facilities and consulting
+  firms managing multiple client sites, offering a 14-day free trial. There is no public
+  API, developer portal, or documented developer surface at this time; this profile is
+  an API Evangelist company lead maintained for enrichment and monitoring.
 url: https://raw.githubusercontent.com/api-evangelist/emtethal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Compliance
+- Inspection
+- Food Service
+- Hospitality
+- Regulatory Technology
+- Saudi Arabia
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/emtethal-domain-security.yml
 - type: Website
   url: https://emtethal.com.sa
+- type: Pricing
+  url: https://emtethal.com.sa/pricing
+- type: PrivacyPolicy
+  url: https://emtethal.com.sa/privacy
+- type: Support
+  url: https://emtethal.com.sa/contact-us
+- type: SignUp
+  url: https://emtethal.com.sa/contact-us
+- type: MobileApp
+  name: Emtethal for iOS
+  url: https://apps.apple.com/sa/app/emtethal/id6756307905
+- type: MobileApp
+  name: Emtethal for Android
+  url: https://play.google.com/store/apps/details?id=com.emtethal.app
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
